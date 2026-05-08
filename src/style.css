@@ -213,6 +213,10 @@ body {
 	letter-spacing: 0px;
 }
 
+#featured-button {
+	width: 10rem;
+}
+
 #trending-wrapper {
 	display: flex;
 	overflow: scroll;
@@ -242,6 +246,10 @@ body {
 	gap: 5rem;
 }
 
+#footer li {
+	text-align: center;
+}
+
 #footer a {
 	font-weight: 400;
 	font-style: Regular;
@@ -260,6 +268,10 @@ body {
 	display: flex;
 	justify-content: center;
 	gap: 1.5rem;
+}
+
+#copyright-text {
+	color: var(--secondary-text-color);
 }
 
 #twitter-link {
@@ -345,7 +357,22 @@ body {
 		padding: 20px 16px 20px 16px;
 	}
 
-	#links {
+	#header-links-wrapper ul {
 		display: none;
+	}
+
+	#footer ul {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		gap: 2rem;
+	}
+
+	.category-card {
+		width: 176px;
+	}
+
+	.trending-card {
+		width: 176px;
 	}
 }
