@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+	--font-lexend: "Lexend", sans-serif;
+	--color-header-border: rgba(229, 232, 235, 1);
+	--color-blackish: rgba(13, 18, 28, 1);
+	--color-whitish: rgba(247, 250, 252, 1);
+	--color-bluish: rgba(18, 92, 237, 1);
+}
+
+@layer base {
+	body {
+		@apply font-lexend;
+	}
+
+	a {
+		@apply hover:underline;
+	}
+}
+
+@layer components {
+	.hoverable {
+		@apply hover:brightness-125 hover:cursor-pointer;
+	}
+	.clickable {
+		@apply active:brightness-75 hover:cursor-pointer;
+	}
+	.button {
+		@apply h-10 bg-bluish px-4 rounded-lg text-whitish font-bold min-w-21 max-w-120;
+	}
+}

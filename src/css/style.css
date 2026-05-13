@@ -275,15 +275,15 @@ body {
 }
 
 #twitter-link {
-	background-image: url("./icons/twitter.svg");
+	background-image: url("/assets/icons/twitter.svg");
 }
 
 #instagram-link {
-	background-image: url("./icons/instagram.svg");
+	background-image: url("/assets/icons/instagram.svg");
 }
 
 #facebook-link {
-	background-image: url("./icons/facebook.svg");
+	background-image: url("/assets/icons/facebook.svg");
 }
 /* END FOOTER */
 
