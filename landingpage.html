@@ -18,13 +18,13 @@
 				/>
 				<p class="font-bold text-lg font-blackish">DebiEdu</p>
 			</div>
-			<nav class="flex items-center justify-between gap-8 text-lg">
+			<nav class="flex items-center justify-between gap-8 text-sm">
 				<ul class="hidden font-medium text-blackish md:flex md:gap-9">
-					<a href="#">Home</a>
-					<a href="#">Courses</a>
-					<a href="#">About</a>
-					<a href="#">Contact</a>
-					<a href="index.html">Product</a>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Courses</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="index.html">Product</a></li>
 				</ul>
 				<button type="button" class="button hoverable clickable">
 					Sign Up
@@ -32,36 +32,141 @@
 			</nav>
 		</header>
 		<main class="px-4 py-5 md:px-40">
-			<div class="flex flex-col p-4">
-				<figure class="p-4 min-h-120 rounded-lg gap-5 relative">
-					<img
-						src="/assets/images/lms/hero-bg.png"
-						alt="Illustration of a woman learning"
-						class=""
-					/>
-					<div class="flex flex-col text-center text-white gap-2">
-						<h1 class="font-lexend text-5xl/snug font-black tracking-tight">
-							Unlock Your Potential with EduLearn
-						</h1>
-						<p class="text-base">
-							Embark on a journey of knowledge and skill development with our
-							comprehensive online courses. Learn at your own pace, anytime,
-							anywhere.
-						</p>
+			<div class="flex flex-col">
+				<section class="p-4">
+					<div
+						class="bg-[linear-gradient(to_right,rgba(0,0,0,0.1),rgba(0,0,0,0.4)),url(/assets/images/lms/hero-bg.png)] bg-no-repeat bg-cover bg-center rounded-lg px-5 py-27 flex flex-col items-center justify-center gap-5"
+					>
+						<div id="hero" class="flex flex-col text-center text-white gap-2">
+							<h1 class="text-5xl/snug font-black tracking-tighter">
+								Unlock Your Potential with EduLearn
+							</h1>
+							<p class="text-base">
+								Embark on a journey of knowledge and skill development with our
+								comprehensive online courses. Learn at your own pace, anytime,
+								anywhere.
+							</p>
+						</div>
+						<button type="button" class="px-5 button hoverable clickable">
+							Start Learning
+						</button>
 					</div>
-					<button type="button" class="px-5 button hoverable clickable">
-						Start Learning
-					</button>
-				</figure>
-				<section class="px-4 py-10">
-					<header class="flex flex-col gap-4">
-						<h1 class="font-black text-4xl/normal tracking-tight text-blackish">
-							Why Choose EduLearn?
-						</h1>
-						<p>B</p>
-					</header>
 				</section>
+				<section class="px-4 py-10 flex flex-col gap-10">
+					<header class="flex flex-col gap-4">
+						<h2
+							id="why-choose-us"
+							class="font-black text-4xl/normal tracking-tight text-blackish"
+						>
+							Why Choose EduLearn?
+						</h2>
+						<p>
+							Our platform is designed to provide a seamless and effective
+							learning experience, ensuring you gain the skills you need to
+							succeed.
+						</p>
+					</header>
+					<div class="flex gap-3 overflow-x-scroll">
+						<div class="choice-card">
+							<img src="/assets/icons/lms/choise1.svg" alt="Book icon" />
+							<div class="flex flex-col gap-1">
+								<p class="font-bold">Online Material</p>
+								<p class="text-card-description text-sm">
+									Access a vast library of high-quality learning materials,
+									including videos, articles, and interactive content.
+								</p>
+							</div>
+						</div>
+						<div class="choice-card">
+							<img src="/assets/icons/lms/choise2.svg" alt="Paper icon" />
+							<div class="flex flex-col gap-1">
+								<p class="font-bold">Quizzes & Assignments</p>
+								<p class="text-card-description text-sm">
+									Test your knowledge and reinforce your learning with engaging
+									quizzes and practical assignments.
+								</p>
+							</div>
+						</div>
+						<div class="choice-card">
+							<img src="/assets/icons/lms/choise3.svg" alt="Certificate icon" />
+							<div class="flex flex-col gap-1">
+								<p class="font-bold">Certificates</p>
+								<p class="text-card-description text-sm">
+									Earn certificates upon completion of courses, showcasing your
+									achievements and enhancing your credentials.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<header class="px-4 pt-5 pb-3">
+					<h3 id="featured-courses" class="font-bold text-[22px]">
+						Featured Courses
+					</h3>
+				</header>
+				<section class="p-4">
+					<div class="flex gap-3 overflow-scroll">
+						<figure class="featured-card">
+							<img
+								src="/assets/images/lms/course1.png"
+								alt="Picture with clouds and a tree"
+							/>
+							<figcaption>
+								<p class="font-bold">Web Development Fundamentals</p>
+								<p class="text-card-description text-sm">
+									Learn the basics of HTML, CSS, and JavaScript to build your
+									first website.
+								</p>
+							</figcaption>
+						</figure>
+						<figure class="featured-card">
+							<img
+								src="/assets/images/lms/course2.png"
+								alt="Picture with clouds and a tree"
+							/>
+							<figcaption>
+								<p class="font-bold">Advanced JavaScript Techniques</p>
+								<p class="text-card-description text-sm">
+									Dive deep into JavaScript concepts like asynchronous
+									programming, closures, and ES6 features.
+								</p>
+							</figcaption>
+						</figure>
+						<figure class="featured-card">
+							<img
+								src="/assets/images/lms/course3.png"
+								alt="Picture with clouds and a tree"
+							/>
+							<figcaption>
+								<p class="font-bold">Responsive Design Mastery</p>
+								<p class="text-card-description text-sm">
+									Master the art of creating websites that adapt to different
+									screen sizes and devices.
+								</p>
+							</figcaption>
+						</figure>
+					</div>
+				</section>
+				<div class="px-4 py-3 flex justify-center items-center">
+					<button
+						class="min-w-21 max-w-120 h-10 px-4 bg-view-all-courses rounded-lg text-bold text-sm hoverable clickable"
+					>
+						View All Courses
+					</button>
+				</div>
 			</div>
 		</main>
+		<footer class="flex justify-center-safe">
+			<div class="w-full max-w-240 text-footer">
+				<div class="px-5 py-10 flex flex-col gap-6">
+					<ul class="flex justify-evenly text-base">
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Terms of Service</a></li>
+						<li><a href="#">Contact Us</a></li>
+					</ul>
+					<p class="text-center">&copy; 2026 DibiEdu. All rights reserved.</p>
+				</div>
+			</div>
+		</footer>
 	</body>
 </html>
