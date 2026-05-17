@@ -6,7 +6,7 @@
 		<title>DibiEdu: Learning Management System</title>
 		<link rel="stylesheet" href="/dist/landing-page.css" />
 	</head>
-	<body>
+	<body class="bg-whitish font-lexend">
 		<header
 			class="flex justify-between bg-white px-10 py-3 border-b border-b-header-border"
 		>
@@ -33,11 +33,14 @@
 		</header>
 		<main class="px-4 py-5 md:px-40">
 			<div class="flex flex-col">
-				<section class="p-4">
+				<section class="animate-fadein opacity-0 p-4">
 					<div
 						class="bg-[linear-gradient(to_right,rgba(0,0,0,0.1),rgba(0,0,0,0.4)),url(/assets/images/lms/hero-bg.png)] bg-no-repeat bg-cover bg-center rounded-lg px-5 py-27 flex flex-col items-center justify-center gap-5"
 					>
-						<div id="hero" class="flex flex-col text-center text-white gap-2">
+						<div
+							id="hero"
+							class="animate-fadein [animation-delay:200ms] opacity-0 flex flex-col text-center text-white gap-2"
+						>
 							<h1 class="text-5xl/snug font-black tracking-tighter">
 								Unlock Your Potential with EduLearn
 							</h1>
@@ -47,12 +50,17 @@
 								anywhere.
 							</p>
 						</div>
-						<button type="button" class="px-5 button hoverable clickable">
+						<button
+							type="button"
+							class="animate-fadein [animation-delay:300ms] opacity-0 px-5 button hoverable clickable"
+						>
 							Start Learning
 						</button>
 					</div>
 				</section>
-				<section class="px-4 py-10 flex flex-col gap-10">
+				<section
+					class="animate-fadein [animation-delay:400ms] opacity-0 px-4 py-10 flex flex-col gap-10"
+				>
 					<header class="flex flex-col gap-4">
 						<h2
 							id="why-choose-us"
@@ -66,7 +74,7 @@
 							succeed.
 						</p>
 					</header>
-					<div class="flex gap-3 overflow-x-scroll">
+					<div class="flex gap-3 overflow-x-scroll md:overflow-visible">
 						<div class="choice-card">
 							<img src="/assets/icons/lms/choise1.svg" alt="Book icon" />
 							<div class="flex flex-col gap-1">
@@ -99,13 +107,15 @@
 						</div>
 					</div>
 				</section>
-				<header class="px-4 pt-5 pb-3">
+				<header
+					class="animate-fadein [animation-delay:600ms] opacity-0 px-4 pt-5 pb-3"
+				>
 					<h3 id="featured-courses" class="font-bold text-[22px]">
 						Featured Courses
 					</h3>
 				</header>
-				<section class="p-4">
-					<div class="flex gap-3 overflow-scroll">
+				<section class="animate-fadein [animation-delay:600ms] opacity-0 p-4">
+					<div class="flex gap-3 overflow-scroll md:overflow-visible">
 						<figure class="featured-card">
 							<img
 								src="/assets/images/lms/course1.png"
@@ -147,7 +157,9 @@
 						</figure>
 					</div>
 				</section>
-				<div class="px-4 py-3 flex justify-center items-center">
+				<div
+					class="animate-fadein [animation-delay:800ms] opacity-0 px-4 py-3 flex justify-center items-center"
+				>
 					<button
 						class="min-w-21 max-w-120 h-10 px-4 bg-view-all-courses rounded-lg text-bold text-sm hoverable clickable"
 					>

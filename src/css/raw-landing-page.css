@@ -1,7 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
 @import "tailwindcss";
 
-@theme {
+@keyframes fadein {
+	from {
+		opacity: 0;
+		transform: translate(0, 20px);
+	}
+	to {
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+}
+
+@theme default {
+	/* colors */
 	--font-lexend: "Lexend", sans-serif;
 	--color-header-border: rgba(229, 232, 235, 1);
 	--color-blackish: rgba(13, 18, 28, 1);
@@ -11,6 +23,18 @@
 	--color-card-border: rgba(207, 214, 232, 1);
 	--color-view-all-courses: rgba(232, 235, 242, 1);
 	--color-footer: rgba(77, 102, 153, 1);
+	/* animation */
+	--animate-fadein: 1s ease 0s forwards fadein;
+	/* --animate-fadein-100: 1s ease 100ms forwards fadein;
+	--animate-fadein-200: 1s ease 200ms forwards fadein;
+	--animate-fadein-300: 1s ease 300ms forwards fadein;
+	--animate-fadein-400: 1s ease 400ms forwards fadein;
+	--animate-fadein-500: 1s ease 500ms forwards fadein;
+	--animate-fadein-600: 1s ease 600ms forwards fadein;
+	--animate-fadein-700: 1s ease 700ms forwards fadein;
+	--animate-fadein-800: 1s ease 800ms forwards fadein;
+	--animate-fadein-900: 1s ease 900ms forwards fadein;
+	--animate-fadein-1000: 1s ease 1000ms forwards fadein; */
 }
 
 @layer base {
@@ -19,7 +43,7 @@
 	}
 
 	a {
-		@apply hover:underline;
+		@apply hover:text-bluish;
 	}
 }
 
@@ -34,7 +58,7 @@
 		@apply h-10 bg-bluish px-4 rounded-lg text-whitish font-bold min-w-21 max-w-120;
 	}
 	.choice-card {
-		@apply p-4 min-w-75 flex flex-col gap-3 rounded-lg border border-card-border;
+		@apply p-4 min-w-75 flex flex-col gap-3 rounded-lg border border-card-border hover:scale-[1.05] hover:shadow-lg;
 	}
 	.choice-card img {
 		@apply size-6 object-contain;
